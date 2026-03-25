@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./cronos-backend
+      dockerfile: Dockerfile.prod
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./cronos-backend:/app
+      - /app/node_modules
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    restart: always
+    networks:
+      - cronos-network
+
+  frontend:
+    build:
+      context: ./cronos-frontend
+      dockerfile: Dockerfile.prod.nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./cronos-frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_BASE_URL=${VITE_API_BASE_URL}
+    depends_on:
+      - backend
+    networks:
+      - cronos-network
+
+networks:
+  cronos-network:
+    driver: bridge
+    name: cronos_prod_network

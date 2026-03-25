@@ -4,23 +4,23 @@ services:
   backend:
     build:
       context: ./cronos-backend
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     ports:
       - "3000:3000"
-      - "5555:5555"
     volumes:
       - ./cronos-backend:/app
       - /app/node_modules
     environment:
       - DATABASE_URL=${DATABASE_URL}
       - JWT_SECRET=${JWT_SECRET}
+    restart: always
     networks:
       - cronos-network
 
   frontend:
     build:
       context: ./cronos-frontend
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod.node
     ports:
       - "5173:5173"
     volumes:
@@ -36,4 +36,4 @@ services:
 networks:
   cronos-network:
     driver: bridge
-    name: cronos_master_network
+    name: cronos_prod_network
