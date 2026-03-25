@@ -20,7 +20,7 @@ services:
   frontend:
     build:
       context: ./cronos-frontend
-      dockerfile: Dockerfile.prod.nginx
+      dockerfile: Dockerfile.prod
     ports:
       - "80:80"
     volumes:
@@ -30,6 +30,7 @@ services:
       - VITE_API_BASE_URL=${VITE_API_BASE_URL}
     depends_on:
       - backend
+    restart: always
     networks:
       - cronos-network
 
