@@ -1,6 +1,8 @@
 [submodule "cronos-backend"]
 	path = cronos-backend
 	url = https://github.com/Felopssauro/cronos-backend
+	branch = dev
 [submodule "cronos-frontend"]
 	path = cronos-frontend
 	url = https://github.com/Felopssauro/cronos-frontend
+	branch = dev
