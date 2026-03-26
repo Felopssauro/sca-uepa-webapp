@@ -1,8 +1,8 @@
-[submodule "cronos-backend"]
-	path = cronos-backend
-	url = https://github.com/Felopssauro/cronos-backend
+[submodule "sca-backend"]
+	path = sca-backend
+	url = https://github.com/Felopssauro/sca-backend
 	branch = dev
-[submodule "cronos-frontend"]
-	path = cronos-frontend
-	url = https://github.com/Felopssauro/cronos-frontend
+[submodule "sca-frontend"]
+	path = sca-frontend
+	url = https://github.com/Felopssauro/sca-frontend
 	branch = dev
