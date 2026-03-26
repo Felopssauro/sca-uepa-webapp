@@ -1,0 +1,6 @@
+[submodule "sca-frontend"]
+	path = sca-frontend
+	url = https://github.com/Felopssauro/sca-frontend.git
+[submodule "sca-backend"]
+	path = sca-backend
+	url = https://github.com/Felopssauro/sca-backend.git
