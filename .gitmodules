@@ -1,8 +1,0 @@
-[submodule "sca-backend"]
-	path = sca-backend
-	url = https://github.com/Felopssauro/sca-backend
-	branch = dev
-[submodule "sca-frontend"]
-	path = sca-frontend
-	url = https://github.com/Felopssauro/sca-frontend
-	branch = dev
