@@ -87,7 +87,7 @@ Never commit to this repository, without pushing your changes on the submodules 
 Example:
 
 - `cd sca-backend/`
-- `git checkout dev`: if you aren't on the correct branch
+- `git checkout dev` --> if you aren't on the correct branch
 - `git add .`
 - `git commit -m "feature: example`
 - `git push origin dev`
