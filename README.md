@@ -89,7 +89,7 @@ Example:
 - `cd sca-backend/`
 - `git checkout dev` --> if you aren't on the correct branch
 - `git add .`
-- `git commit -m "feature: example`
+- `git commit -m "feature: example"`
 - `git push origin dev`
 
 After this you go back to the root folder and commit to this repository, to update the submodules pointers.
