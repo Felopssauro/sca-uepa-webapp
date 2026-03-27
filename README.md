@@ -96,7 +96,7 @@ After this you go back to the root folder and commit to this repository, to upda
 
 - `cd ..`
 - `git add sca-backend` --> Never add the submodule name as folder, with a `/` at the end
-- `git commit -m "example given`
+- `git commit -m "example given"`
 - `git push origin dev`
 
 ### Essential commands
