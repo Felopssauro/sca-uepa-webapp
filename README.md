@@ -101,7 +101,7 @@ After this you go back to the root folder and commit to this repository, to upda
 
 ### Essential commands
 
-All commands are explained assuming you are running them from the root directory `sca-uepa-webapp/`
+All commands are explained assuming you are running them from the root directory `sca-uepa-webapp/`.
 
 #### Running other commands inside containers
 
@@ -139,9 +139,9 @@ When running commands using docker compose, you will have to use `-f` flag to se
 - `docker compose -f <docker-compose.name.yml> up`: start containers built with compose file.
 - `docker compose -f <docker-compose.name.yml> rm -f`: force removes stopped containers built with compose file.
 - `docker compose -f <docker-compose.name.yml> down -v`: removes the containers and
-networks for that compose file and deletes named volumes
-- `docker image ls`: list docker images
-- `docker image rm <image-id-or-name>`: remove docker images
+networks for that compose file and deletes named volumes.
+- `docker image ls`: list docker images.
+- `docker image rm <image-id-or-name>`: remove docker images.
 
 #### Prisma
 
