@@ -119,7 +119,7 @@ It is important to run all `npm` and `npx prisma` commands inside the containers
 - `git checkout dev`: change your work branch to dev.
   - Use this if, when inside a submodule folder, your branch is detached and says something like: `sca-backend/ on HEAD (75307ab)`. This means you are tracking the commit and not the branch, use this before commiting any change.
 - `git pull origin dev`: fetch and merge the latest changes of this repository
-- `git push origin dev`: push your commits to the dev branch on you remote repository
+- `git push origin dev`: push your commits to the dev branch on your remote repository.
 
 #### Docker and Docker Compose
 
